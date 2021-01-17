@@ -1,0 +1,333 @@
+.schedule-sale {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 90px;
+  .main-wrapper {
+    background-image: url("../img/point-bg.png");
+    background-repeat: no-repeat;
+    background-position: 80% 50%;
+  }
+}
+
+.date-scale {
+  display: table;
+  width: 100%;
+}
+
+.date-scale__row {
+  display: table-row;
+  width: 100%;
+
+  &:not(:nth-of-type(2)) {
+    .date-scale--color {
+      padding-left: gw1(50px);
+      img {
+        &:nth-of-type(1) {
+          position: absolute;
+          top: gw1(10px);
+          right: gw1(-120px);
+          width: gw1(171px);
+        }
+        &:nth-of-type(2) {
+          position: absolute;
+          top: gw1(152px);
+          right: gw1(-90px);
+          width: gw1(134px);
+        }
+      }
+    }
+  }
+  &:nth-of-type(2) {
+    .date-scale--color {
+      padding-right: gw1(50px);
+      img {
+        &:nth-of-type(1) {
+          position: absolute;
+          top: gw1(10px);
+          left: gw1(-125px);
+          width: gw1(171px);
+        }
+        &:nth-of-type(2) {
+          position: absolute;
+          top: gw1(152px);
+          left: gw1(-97px);
+          width: gw1(134px);
+        }
+      }
+    }
+    .date-scale__circle {
+      float: right;
+    }
+  }
+}
+
+.date-scale__cell {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  p {
+    font-family: PFDinTextCondPro-Regular, sans-serif;
+    font-size: gw1(70px);
+    text-align: center;
+  }
+}
+
+.date-scale__circle {
+  position: relative;
+  display: table;
+  width: gw1(286px);
+  height: gw1(286px);
+  border-radius: 200px;
+  background-color: #c51210;
+  text-align: center;
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    font-size: gw1(75px);
+    font-family: PFDinTextCondPro-Regular, sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+.date-scale--color {
+  position: relative;
+  padding-top: 34px;
+  padding-bottom: 35px;
+  background-color: #eee066;
+}
+
+@media screen and (min-width: 1000px) {
+  .date-scale__row {
+    &:not(:nth-of-type(2)) {
+      .date-scale--color {
+        padding-right: gw2(50px *1.4);
+        img {
+          &:nth-of-type(1) {
+            top: gw2(10px *1.4);
+            right: gw2(-120px *1.4);
+            width: gw2(171px *1.4);
+          }
+          &:nth-of-type(2) {
+            top: gw2(152px *1.4);
+            right: gw2(-90px *1.4);
+            width: gw2(134px *1.4);
+          }
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      .date-scale--color {
+        padding-left: gw2(50px *1.4);
+        img {
+          &:nth-of-type(1) {
+            top: gw2(10px *1.4);
+            left: gw2(-125px *1.4);
+            width: gw2(171px *1.4);
+          }
+          &:nth-of-type(2) {
+            top: gw2(152px *1.4);
+            left: gw2(-97px *1.4);
+            width: gw2(134px *1.4);
+          }
+        }
+      }
+    }
+  }
+  .date-scale__cell {
+    p {
+      font-size: gw2(70px * 1.4);
+    }
+  }
+
+  .date-scale__circle {
+    width: gw2(286px * 1.4);
+    height: gw2(286px * 1.4);
+
+    span {
+      font-size: gw2(75px * 1.4);
+    }
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .date-scale__row {
+    &:not(:nth-of-type(2)) {
+      .date-scale--color {
+        padding-left: gw2(50px *1.4);
+        img {
+          &:nth-of-type(1) {
+            top: gw2(10px *1.4);
+            right: gw2(-120px *1.4);
+            width: gw2(171px *1.4);
+          }
+          &:nth-of-type(2) {
+            top: gw2(152px *1.4);
+            right: gw2(-90px *1.4);
+            width: gw2(134px *1.4);
+          }
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      .date-scale--color {
+        padding-right: gw2(50px *1.4);
+        img {
+          &:nth-of-type(1) {
+            top: gw2(10px *1.4);
+            left: gw2(-125px *1.4);
+            width: gw2(171px *1.4);
+          }
+          &:nth-of-type(2) {
+            top: gw2(152px *1.4);
+            left: gw2(-97px *1.4);
+            width: gw2(134px *1.4);
+          }
+        }
+      }
+    }
+  }
+  .date-scale__cell {
+    p {
+      font-size: gw2(70px * 1.4);
+    }
+  }
+
+  .date-scale__circle {
+    width: gw2(286px * 1.4);
+    height: gw2(286px * 1.4);
+
+    span {
+      font-size: gw2(75px * 1.4);
+    }
+  }
+}
+
+
+@media screen and (min-width: 1400px) {
+  .date-scale__row {
+    &:not(:nth-of-type(2)) {
+      .date-scale--color {
+        padding-left: gw2(50px);
+        img {
+          &:nth-of-type(1) {
+            top: gw2(10px);
+            right: gw2(-120px);
+            width: gw2(171px);
+          }
+          &:nth-of-type(2) {
+            top: gw2(152px);
+            right: gw2(-90px);
+            width: gw2(134px);
+          }
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      .date-scale--color {
+        padding-right: gw2(50px);
+        img {
+          &:nth-of-type(1) {
+            top: gw2(10px);
+            left: gw2(-125px);
+            width: gw2(171px);
+          }
+          &:nth-of-type(2) {
+            top: gw2(152px);
+            left: gw2(-97px);
+            width: gw2(134px);
+          }
+        }
+      }
+    }
+  }
+  .date-scale__cell {
+    p {
+      font-size: gw2(70px);
+    }
+  }
+
+  .date-scale__circle {
+    width: gw2(286px);
+    height: gw2(286px);
+
+    span {
+      font-size: gw2(75px);
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .schedule-sale {
+    .main-wrapper {
+      background-image: none;
+    }
+    padding-top: 70px;
+    padding-bottom: 20px;
+    h1 {
+      top: -25px;
+      height: 50px;
+      line-height: 60px;
+      font-size: 30px;
+    }
+  }
+  .date-scale {
+    display: block;
+  }
+  .date-scale__row {
+    display: block;
+    text-align: center;
+    &:not(:nth-of-type(2)) {
+      .date-scale--color {
+        padding-left: 0;
+        //padding-right: 20px;
+      }
+    }
+    &:nth-of-type(2) {
+      transform: scale(-1);
+      .date-scale--color {
+        padding-right: 0;
+        //padding-left: 20px;
+      }
+      .date-scale__cell {
+        transform: scale(-1);
+      }
+      .date-scale__circle {
+        float: none;
+      }
+    }
+    img {
+      &:nth-of-type(1) {
+        top: gw2(10px *3) !important;
+        left: gw2(-125px *3) !important;
+        width: gw2(171px *3) !important;
+      }
+      &:nth-of-type(2) {
+        top: gw2(152px *3) !important;
+        left: gw2(-97px *3) !important;
+        width: gw2(134px *3  ) !important;
+      }
+    }
+  }
+  .date-scale__cell {
+    display: inline-block;
+    width: 100%;
+    p {
+      padding: 30px 0;
+      background-image: url(../img/mob-circle-bg.png);
+      background-repeat: no-repeat;
+      background-position: 50% -50px;
+      font-size: gw2(70px) *3;
+    }
+  }
+  .date-scale__circle {
+    width: gw2(286px) *3 !important;
+    height: gw2(286px) *3 !important;
+    margin: auto;
+    padding: 0;
+    span {
+      font-size: gw2(75px) *3;
+    }
+  }
+}
